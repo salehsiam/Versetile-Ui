@@ -24,12 +24,11 @@ header {
 
 .nav {
   max-width: 1060px;
-  height: 46px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
   text-align: center;
-  padding-top: 58px;
+  margin-top: 58px;
 }
 
 .nav-icon {
@@ -121,7 +120,8 @@ header {
   height: 580px;
   position: relative;
 }
-
+.hero-img {
+}
 .video-tutorial {
   display: flex;
   align-items: center;
@@ -171,6 +171,57 @@ header {
   color: rgba(255, 255, 255, 0.65);
   font-size: 0.8rem;
 }
+/* header styles end */
+
+/* habit styles starts */
+
+.habit {
+  width: 1044px;
+  height: 452px;
+  /* border: 1px solid white; */
+  margin: 0 auto;
+  margin-top: 100px;
+}
+.habit-title {
+  color: rgb(255, 255, 255);
+  font-size: 3rem;
+  font-weight: 900;
+  text-align: center;
+}
+.habit-description {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.9rem;
+  margin-top: 10px;
+  text-align: center;
+}
+.habit-details {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  text-align: center;
+  margin-top: 58px;
+}
+.movement,
+.time,
+.practice,
+.weight-loss {
+  width: 231px;
+  height: 274px;
+  margin: 0 auto;
+}
+.habit-img {
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+.habit-name {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: rgb(255, 255, 255);
+}
+.habit-text {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.5);
+  margin-top: 6px;
+}
 /* responsive-nav */
 
 @media screen and (max-width: 576px) {
@@ -191,10 +242,12 @@ header {
     flex-direction: column;
     align-items: start;
     width: 100%;
-    margin: 70px 20px;
+    height: auto;
+    margin: 30px 0;
   }
   .hero-content {
     width: 90%;
+    padding: 20px;
   }
   .hero-tittle {
     font-size: 2.25rem;
@@ -206,6 +259,9 @@ header {
   .btn-secondady {
     font-size: 1rem;
     padding: 10px 24px;
+  }
+  .hero-img-box {
+    width: 100%;
   }
   .video-tutorial {
     left: 0;
@@ -223,11 +279,24 @@ header {
     font-size: 1.1rem;
   }
   .workout-videos {
-    top: 80px;
-    right: -15px;
+    top: 180px;
+    right: 60px;
     padding: 12px 18px;
   }
   .workout-number {
     font-size: 1.8rem;
+  }
+
+  /* habit section responsive */
+  .habit {
+    width: 100%;
+    height: auto;
+  }
+  ..habit-title {
+    font-size: 2rem;
+  }
+  .habit-details {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 40px;
   }
 }
