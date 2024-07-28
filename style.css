@@ -103,18 +103,21 @@ header {
   margin-top: 35px;
   cursor: pointer;
 }
-.btn-secondady {
+.btn-secondary {
   font-size: 1.1rem;
   font-weight: 600;
   padding: 16px 40px;
   color: rgb(255, 255, 255);
   border: 1px solid rgb(255, 255, 255);
   border-radius: 42px;
+  margin-top: 35px;
   background-color: rgba(0, 0, 0, 0.445);
   margin-left: 14px;
   cursor: pointer;
 }
-
+.btn-primary-res {
+  display: none;
+}
 .hero-img-box {
   width: 349px;
   height: 580px;
@@ -230,7 +233,7 @@ header {
   height: 371px;
   margin: 0 auto;
   margin-top: 100px;
-  border: 1px solid white;
+  /* border: 1px solid white; */
   border-radius: 18px;
   background-color: rgb(34, 34, 34);
   display: flex;
@@ -285,19 +288,33 @@ header {
   }
   .hero-content {
     width: 90%;
+    height: auto;
     padding: 20px;
   }
   .hero-tittle {
     font-size: 2.25rem;
   }
-  /* .btn-primary {
+  .btn-container {
+    display: flex;
+  }
+  .btn-primary {
+    display: none;
+  }
+  .btn-primary-res {
+    display: block;
+    font-size: 1rem;
+    padding: 10px 24px;
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 42px;
+    background-color: rgb(230, 83, 60);
+    margin-top: 35px;
+    cursor: pointer;
+  }
+  .btn-secondary {
     font-size: 1rem;
     padding: 10px 24px;
   }
-  .btn-secondady {
-    font-size: 1rem;
-    padding: 10px 24px;
-  } */
   .hero-img-box {
     width: 100%;
     height: auto;
@@ -325,7 +342,7 @@ header {
     font-size: 0.8rem;
   }
   .workout-videos {
-    top: 100px;
+    top: 130px;
     right: 10px;
     padding: 12px 18px;
   }
@@ -360,6 +377,9 @@ header {
     width: 90%;
     height: auto;
     margin-bottom: 30px;
+  }
+  .run-title {
+    font-size: 2rem;
   }
   .run-img {
     width: 90%;
