@@ -120,6 +120,7 @@ header {
   height: 580px;
   position: relative;
 }
+
 .hero-img {
 }
 .video-tutorial {
@@ -222,8 +223,45 @@ header {
   color: rgba(255, 255, 255, 0.5);
   margin-top: 6px;
 }
-/* responsive-nav */
 
+/* run section styles start */
+.run {
+  width: 1060px;
+  height: 371px;
+  margin: 0 auto;
+  margin-top: 100px;
+  border: 1px solid white;
+  border-radius: 18px;
+  background-color: rgb(34, 34, 34);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.run-content {
+  width: 443px;
+  height: 290px;
+}
+.run-title {
+  font-size: 3rem;
+  font-weight: 900;
+  color: rgb(255, 255, 255);
+  margin-bottom: 14px;
+}
+.run-description {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.9rem;
+}
+.run-img {
+  width: 366px;
+  height: 312px;
+}
+.run-img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 18px;
+}
+
+/* responsive */
 @media screen and (max-width: 576px) {
   .nav {
     margin-left: 20px;
@@ -252,16 +290,21 @@ header {
   .hero-tittle {
     font-size: 2.25rem;
   }
-  .btn-primary {
+  /* .btn-primary {
     font-size: 1rem;
     padding: 10px 24px;
   }
   .btn-secondady {
     font-size: 1rem;
     padding: 10px 24px;
-  }
+  } */
   .hero-img-box {
     width: 100%;
+    height: auto;
+  }
+
+  .hero-img {
+    width: 90%;
   }
   .video-tutorial {
     left: 0;
@@ -278,13 +321,19 @@ header {
   .tutorial-number {
     font-size: 1.1rem;
   }
+  .tutorial-text {
+    font-size: 0.8rem;
+  }
   .workout-videos {
-    top: 180px;
-    right: 60px;
+    top: 100px;
+    right: 10px;
     padding: 12px 18px;
   }
   .workout-number {
     font-size: 1.8rem;
+  }
+  .workout-text {
+    font-size: 0.6rem;
   }
 
   /* habit section responsive */
@@ -292,11 +341,28 @@ header {
     width: 100%;
     height: auto;
   }
-  ..habit-title {
+  .habit-title {
     font-size: 2rem;
   }
   .habit-details {
     grid-template-columns: repeat(1, 1fr);
     gap: 40px;
+  }
+
+  /* run section  */
+  .run {
+    width: 95%;
+    height: auto;
+    flex-direction: column;
+    padding: 30px 10px;
+  }
+  .run-content {
+    width: 90%;
+    height: auto;
+    margin-bottom: 30px;
+  }
+  .run-img {
+    width: 90%;
+    height: auto;
   }
 }
