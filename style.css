@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
-
+@import url("https://fonts.cdnfonts.com/css/miama");
 * {
   margin: 0;
   padding: 0;
@@ -11,7 +11,7 @@ body {
 }
 
 header {
-  max-width: 1440;
+  max-width: 1440px;
   background-image: linear-gradient(
     180deg,
     rgb(17, 17, 17),
@@ -87,6 +87,10 @@ header {
   margin-bottom: 25px;
 }
 .shape {
+  font-family: "Miama", sans-serif;
+  font-size: 9rem;
+  font-weight: 400;
+  line-height: 85px;
 }
 .hero-description {
   color: rgba(255, 255, 255, 0.5);
@@ -117,6 +121,12 @@ header {
 }
 .btn-primary-res {
   display: none;
+  color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 42px;
+  background-color: rgb(230, 83, 60);
+  margin-top: 35px;
+  cursor: pointer;
 }
 .hero-img-box {
   width: 349px;
@@ -213,6 +223,7 @@ header {
   margin: 0 auto;
 }
 .habit-img {
+  border: 5px solid rgba(255, 255, 255, 0.3);
   border-radius: 50%;
   margin-bottom: 20px;
 }
@@ -284,15 +295,21 @@ header {
     align-items: start;
     width: 100%;
     height: auto;
-    margin: 30px 0;
+    margin: 20px 0;
   }
   .hero-content {
-    width: 90%;
+    width: 95%;
     height: auto;
     padding: 20px;
   }
   .hero-tittle {
     font-size: 2.25rem;
+    line-height: 25px;
+    width: 70%;
+  }
+  .shape {
+    font-size: 4.2rem;
+    font-weight: 200;
   }
   .btn-container {
     display: flex;
@@ -304,12 +321,6 @@ header {
     display: block;
     font-size: 1rem;
     padding: 10px 24px;
-    color: rgb(255, 255, 255);
-    border: none;
-    border-radius: 42px;
-    background-color: rgb(230, 83, 60);
-    margin-top: 35px;
-    cursor: pointer;
   }
   .btn-secondary {
     font-size: 1rem;
