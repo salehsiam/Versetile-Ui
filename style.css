@@ -524,15 +524,15 @@ input {
     font-size: 1rem;
   }
   .bmi-form {
-    width: 100%;
+    max-width: 100%;
   }
   input,
   .sex {
-    width: 170.5px;
+    max-width: 45%;
     height: 48px;
   }
   .factor {
-    width: 353px;
+    max-width: 92%;
     height: 48px;
   }
   .calc-btn {
