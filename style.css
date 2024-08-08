@@ -496,4 +496,46 @@ input {
     width: 90%;
     height: auto;
   }
+  /* bmi section responsive */
+  .bmi-tittle-box {
+    max-width: 100%;
+    padding: 20px;
+  }
+  .bmi-tittle {
+    font-size: 2rem;
+  }
+
+  .bmi-calc-container {
+    max-width: 100%;
+    height: auto;
+  }
+  .bmi-calc-chart-container {
+    max-width: 100%;
+    height: auto;
+    padding: 20px;
+  }
+  .bmi-calc-chart-content {
+    max-width: 100%;
+    height: auto;
+    flex-direction: column;
+    gap: 42px;
+  }
+  .calc-title {
+    font-size: 1rem;
+  }
+  .bmi-form {
+    width: 100%;
+  }
+  input,
+  .sex {
+    width: 170.5px;
+    height: 48px;
+  }
+  .factor {
+    width: 353px;
+    height: 48px;
+  }
+  .calc-btn {
+    display: block;
+  }
 }
