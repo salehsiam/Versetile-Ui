@@ -362,6 +362,7 @@ input {
   border: none;
   border-radius: 8px;
   padding: 12px 40px 12px 20px;
+  border-right: 20px solid transparent;
 }
 .factor {
   width: 570px;
@@ -371,6 +372,7 @@ input {
   background: rgba(255, 255, 255, 0.1);
   color: rgba(255, 255, 255, 0.6);
   padding: 12px 40px 12px 20px;
+  border-right: 20px solid transparent;
 }
 
 /* TEAM SECTION SYLES STARTS HERE */
@@ -428,6 +430,64 @@ input {
 .trainer {
   color: rgba(255, 255, 255, 0.5);
 }
+
+/* FOOTER STYLES STARTS */
+footer {
+  max-width: 1440px;
+  height: 489px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.1);
+  margin-top: 100px;
+}
+.footer-box {
+  width: 1059px;
+  height: 249px;
+  margin: 0 auto;
+  display: flex;
+  margin-bottom: 80px;
+}
+.footer-content {
+  width: 443px;
+  height: 176px;
+  margin-top: 66px;
+}
+.footer-description {
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.5);
+  line-height: 24px;
+  margin-top: 20px;
+}
+.footer-nav {
+  width: 181px;
+  height: 249px;
+  margin-top: 66px;
+  margin-left: 100px;
+}
+.get-started {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.footer-li {
+  list-style: none;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+}
+.hr {
+  width: 80%;
+  margin: auto;
+  border-top: 2px solid rgba(255, 255, 255, 0.1);
+  margin-bottom: 65px;
+}
+.copyright {
+  font-size: 1.25rem;
+  color: rgba(255, 255, 255, 0.5);
+  text-align: center;
+}
+
 /* responsive */
 @media screen and (max-width: 576px) {
   .nav {
@@ -557,6 +617,7 @@ input {
   .bmi-tittle-box {
     width: 100%;
     padding: 20px;
+    margin-bottom: 50px;
   }
   .bmi-tittle {
     font-size: 2rem;
@@ -610,6 +671,7 @@ input {
   }
   .team-details {
     grid-template-columns: repeat(1, 1fr);
+    margin-top: 50px;
   }
   .team {
     margin: auto;
