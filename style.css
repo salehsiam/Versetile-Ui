@@ -434,7 +434,6 @@ input {
 /* FOOTER STYLES STARTS */
 footer {
   max-width: 1440px;
-  height: 489px;
   margin: 0 auto;
   background: rgba(255, 255, 255, 0.1);
   margin-top: 100px;
@@ -480,12 +479,13 @@ footer {
   width: 80%;
   margin: auto;
   border-top: 2px solid rgba(255, 255, 255, 0.1);
-  margin-bottom: 65px;
+  margin-bottom: 50px;
 }
 .copyright {
   font-size: 1.25rem;
   color: rgba(255, 255, 255, 0.5);
   text-align: center;
+  padding-bottom: 50px;
 }
 
 /* responsive */
@@ -675,5 +675,25 @@ footer {
   }
   .team {
     margin: auto;
+  }
+  .footer {
+    width: 100%;
+    height: auto;
+    background: rgba(255, 255, 255, 0.1);
+  }
+  .footer-box {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  .footer-content {
+    width: 80%;
+    padding-left: 30px;
+  }
+  .footer-nav {
+    margin-top: 20px;
+    margin-left: 30px;
+    height: auto;
   }
 }
