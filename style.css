@@ -467,7 +467,7 @@ input {
   background-color: rgb(230, 83, 60);
   width: 250px;
   height: 520px;
-  padding: 30px;
+  padding: 35px;
   position: relative;
   border-radius: 12px;
   overflow: hidden;
@@ -520,7 +520,7 @@ input {
 }
 .btn-offer-2 {
   background-color: rgba(0, 0, 0, 0.7);
-  margin-top: 70px;
+  margin-top: 85px;
 }
 /* FOOTER STYLES STARTS */
 footer {
