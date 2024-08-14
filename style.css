@@ -99,7 +99,9 @@ header {
 .btn-primary {
   font-size: 1.1rem;
   font-weight: 600;
-  padding: 16px 40px;
+
+  width: 224px;
+  height: 54px;
   color: rgb(255, 255, 255);
   border: none;
   border-radius: 42px;
@@ -269,11 +271,13 @@ header {
 .run-img {
   width: 366px;
   height: 312px;
+  border-radius: 18px;
+  overflow: hidden;
 }
 .run-img img {
   width: 100%;
-  height: 100%;
-  border-radius: 18px;
+  transform: scale(3.25);
+  translate: -150px 130px;
 }
 
 /* BMI CALC STYLES START HERE */
@@ -296,6 +300,8 @@ header {
 .bmi-calc-chart-container {
   max-width: 1440px;
   height: 487px;
+  margin: 0 auto;
+  border-radius: 8px;
   background: rgb(34, 34, 34);
   display: flex;
   align-items: center;
@@ -353,6 +359,7 @@ input {
 ::placeholder {
   color: rgba(255, 255, 255, 0.6);
 }
+
 .sex {
   width: 282.5px;
   height: 48px;
@@ -431,11 +438,90 @@ input {
   color: rgba(255, 255, 255, 0.5);
 }
 
+/* OFFER SECTION STYLES STARTS */
+.offer-container {
+  width: 1060px;
+  height: 550px;
+  margin: 0 auto;
+  margin-top: 80px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+}
+.cart-1,
+.cart-3,
+.cart-4 {
+  background-color: rgba(255, 255, 255, 0.1);
+  width: 250px;
+  height: 450px;
+  padding: 30px;
+  border-radius: 12px;
+}
+.cart-2 {
+  background-color: rgb(230, 83, 60);
+  width: 250px;
+  height: 520px;
+  padding: 30px;
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+}
+.best-offer {
+  background-color: white;
+  font-size: 0.9rem;
+  display: inline-block;
+  padding: 10px 50px;
+  transform: rotate(35deg);
+  position: absolute;
+  right: -40px;
+  top: 10px;
+}
+.package-name {
+  color: rgb(230, 83, 60);
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.package-name2 {
+  color: white;
+}
+.package-price {
+  color: white;
+  font-size: 2.5rem;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+.package-month {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.8rem;
+  margin-bottom: 30px;
+}
+.offer-lists {
+  list-style: none;
+}
+.offer-lists li {
+  color: rgba(255, 255, 255, 0.6);
+  margin-top: 12px;
+}
+.btn-offer {
+  color: rgb(255, 255, 255);
+  background-color: rgb(230, 83, 60);
+  width: 180px;
+  height: 47px;
+  border: none;
+  border-radius: 12px;
+  margin-top: 30px;
+}
+.btn-offer-2 {
+  background-color: rgba(0, 0, 0, 0.9);
+  margin-top: 70px;
+}
 /* FOOTER STYLES STARTS */
 footer {
   max-width: 1440px;
   margin: 0 auto;
   background: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
   margin-top: 100px;
 }
 .footer-box {
@@ -482,7 +568,7 @@ footer {
   margin-bottom: 50px;
 }
 .copyright {
-  font-size: 1.25rem;
+  font-size: 0.8rem;
   color: rgba(255, 255, 255, 0.5);
   text-align: center;
   padding-bottom: 50px;
@@ -613,6 +699,10 @@ footer {
     width: 90%;
     height: auto;
   }
+  .run-img img {
+    transform: none;
+    translate: 0;
+  }
   /* bmi section responsive */
   .bmi-tittle-box {
     width: 100%;
@@ -647,11 +737,9 @@ footer {
   input,
   .sex {
     width: 45%;
-    height: 48px;
   }
   .factor {
     width: 92%;
-    height: 48px;
   }
   .calc-btn {
     display: block;
@@ -676,6 +764,9 @@ footer {
   .team {
     margin: auto;
   }
+
+  /* FOOTER SECTION RESPONSIVE */
+
   .footer {
     width: 100%;
     height: auto;
