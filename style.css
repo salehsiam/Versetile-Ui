@@ -473,8 +473,8 @@ input {
   padding: 10px 50px;
   transform: rotate(35deg);
   position: absolute;
-  right: -40px;
-  top: 10px;
+  right: -45px;
+  top: 8px;
 }
 .package-name {
   color: rgb(230, 83, 60);
@@ -764,7 +764,28 @@ footer {
   .team {
     margin: auto;
   }
+  /* OFFER SECTION RESPONSIVE */
 
+  .offer-container {
+    width: 100%;
+    height: auto;
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: center;
+  }
+  .cart-1,
+  .cart-2,
+  .cart-3,
+  .cart-4 {
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    height: auto;
+  }
+
+  .btn-offer-2 {
+    margin-top: 30px;
+  }
   /* FOOTER SECTION RESPONSIVE */
 
   .footer {
